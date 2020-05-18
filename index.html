@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Minha página</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/main.js"></script>   <!--linka o documento html com o Java Script-->
+    </head>
+
+    <body onload="load()"> <!--onload é uma função para quando carrega a página-->
+            <button type="button" onclick="clicou()">Clique aqui!</button>      <!--cria um botão na página-->
+            <p id="agradecimento" onclick="redirecionar()"></p>                 <!--cria um id para o redirecionamento de página o resto do código esta no Java Script-->
+            <!-- criando o link com referência ao id
+            <p id="mousemove" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui</p>
+            -->
+            <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>  <!--cria um parágrafo e uma referência "this" para ser usada em conjunto com o Java Script-->
+            <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+            <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+            <select onchange="funcaoChange(this)">  <!--cria uma lista suspensa de opções-->
+                <option value="1">Valor 1</option>  <!--informa as opções da lista suspensa-->
+                <option value="2">Valor 2</option>  <!--informa as opções da lista suspensa-->
+                <option value="3">Valor 3</option>  <!--informa as opções da lista suspensa-->
+            </select>                               <!--fecha a lista suspensa-->
+        </body>
+</html>
